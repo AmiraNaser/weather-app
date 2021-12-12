@@ -58,6 +58,9 @@
  .feel {
   display: block;
  }
+ #zip {
+   color: #fff;
+ }
  .myInput {
    border: none;
    background: none;
