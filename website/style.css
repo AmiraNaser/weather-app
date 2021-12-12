@@ -1,111 +1,3 @@
-/* body{
-  background: rgb(228,195,197);
-background: linear-gradient(0deg, rgba(228,195,197,1) 20%, rgba(124,151,198,1) 65%);
-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-#app{
-    display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
-    justify-content: center;
-    grid-gap: 1em;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-}
-
-.holder{
-
-}
-
-.entry{
-    background: rgba(59, 74, 107, .4);
-}
-
-#entryHolder{
-
-}
-
-#date{
-
-}
-
-#temp{
-
-}
-
-#content{
-
-}
-
-.headline {
-
-}
-.title{
-
-}
-
-label{
-    display:block;
-    font-size: 27px;
-}
-
-input{
-    display:block;
-    height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-}
-
-button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-    box-shadow: 2px 4px 5px #444;
-}
-h1{
-    font-size: 36px;
-}
-
-textarea{
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-}
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-}
-::placeholder {
-    color: #f0d43a;
-    font-family: 'Oswald', sans-serif;
-
-}
-
-:-ms-input-placeholder {
-    color: #f0d43a;
-    font-family: 'Oswald', sans-serif;
-
-}
-
-::-ms-input-placeholder {
-    color: #f0d43a;
-    font-family: 'Oswald', sans-serif;
-
-} */
 * {
   margin: 0;
   padding: 0;
@@ -118,7 +10,6 @@ button:focus {
    width: 60%;
    margin: auto;
    margin-top: 6vw;
-   border: 1px solid black;
    display: flex;
  }
  .container, .entry {
@@ -133,10 +24,10 @@ button:focus {
    width: 30%;
    margin-left: 5vw;
  }
- /* .entry {
-   position: relative;
-   top: 3vw;
- } */
+ .entry {
+   /* position: relative;
+   top: 3vw; */
+ }
  .container::after {
    content: "";
    width: 10vw;
@@ -218,4 +109,106 @@ button:focus {
    background: #7062ca;
    color: #fff;
  }
- .
+ .date-container, .tempContainer, .temp_minC, .temp_maxC, .humidityC, #content {
+   background: rgba( 255, 255, 255, 0.1 );
+   backdrop-filter: blur( 0px );
+   -webkit-backdrop-filter: blur( 0px );
+   border-radius: 25px;
+   padding: 2vw;
+ }
+ #day {
+   font-size: 1.9vw;
+   color: #f1c858;
+   font-weight: 700;
+ }
+#date {
+  padding-top: .5vw;
+  font-size: 1.5vw;
+}
+#hourcontainer {
+  padding-top: 1vw;
+  font-size: 3.2vw;
+  font-weight: 700;
+ text-shadow: 0 1px 0 #ccc,
+          0 2px 0 #c9c9c9,
+          0 3px 0 #bbb,
+          0 4px 0 #b9b9b9,
+          0 5px 0 #aaa,
+          0 6px 1px rgba(0,0,0,.1),
+          0 0 5px rgba(0,0,0,.1),
+          0 1px 3px rgba(0,0,0,.3),
+          0 3px 5px rgba(0,0,0,.2),
+          0 5px 10px rgba(0,0,0,.25),
+          0 10px 10px rgba(0,0,0,.2),
+          0 20px 20px rgba(0,0,0,.15);
+}
+.contentContainet, .extra, #content {
+  margin-top: 1vw;
+}
+.title {
+  font-size: 1.7vw;
+  font-weight: 600;
+  margin-bottom: 1.5vw;
+}
+ #temp {
+   padding-left: .5vw;
+   font-size: 3vw;
+   font-weight: 700;
+   text-shadow: 0 1px 0 #ccc,
+           0 2px 0 #c9c9c9,
+           0 3px 0 #bbb,
+           0 4px 0 #b9b9b9,
+           0 5px 0 #aaa,
+           0 6px 1px rgba(0,0,0,.1),
+           0 0 5px rgba(0,0,0,.1),
+           0 1px 3px rgba(0,0,0,.3),
+           0 3px 5px rgba(0,0,0,.2),
+           0 5px 10px rgba(0,0,0,.25),
+           0 10px 10px rgba(0,0,0,.2),
+           0 20px 20px rgba(0,0,0,.15);
+ }
+.celsius {
+  color: #f1c858;
+  font-size: 2.2vw;
+  font-weight: 600;
+}
+#description {
+  color: #7062ca;
+  font-size: 1.7vw;
+  font-weight: 700;
+  position: absolute;
+  left: 12vw;
+  top: 2vw;
+}
+#descriptionImage {
+  position: absolute;
+  left: 10.7vw;
+  top: 4vw;
+}
+.locationContainer {
+  padding-top: .5vw;
+  font-size: 1.38vw;
+}
+.fa-map-marker {
+  margin-right: .5vw;
+  color: #f1c858;
+  font-size: 1.3vw;
+}
+.extra {
+  display: flex;
+}
+.temp_minC, .temp_maxC, .humidityC {
+  text-align: center;
+  padding: 1.9vw 1vw 1.9vw 1vw;
+  margin-right: .8vw;
+  font-size: .9vw;
+  color: #7062ca;
+  font-weight: 600;
+}
+#content {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  text-align: center;
+  font-size: 1.3vw;
+  margin-left: .5vw;
+}
