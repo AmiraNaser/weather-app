@@ -5,30 +5,57 @@
 <title>Weather Journal</title>
 <!-- <link rel="shortcut icon" href="#"> -->
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
  <body>
 <div id = "app">
-  <div class ="holder headline">
-    Weather Journal App
-  </div>
+  <div class="container">
+    <div class="headerImage">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Antu_weather-showers-day.svg/256px-Antu_weather-showers-day.svg.png" alt="">
+    </div>
+    <div class ="holder headline">
+     Weather<p class="journal"> Journal App_<p>
+   </div>
   <div class ="holder zip">
-    <label for="zip">Enter Zipcode here</label>
-    <input type="text" id="zip" placeholder="enter zip code here">
+    <!-- <label for="zip">Enter Zipcode here</label> -->
+    <input type="text" id="zip" placeholder="Enter Zip Code Here...">
   </div>
   <div class ="holder feel">
-    <label for="feelings">How are you feeling today?</label>
-    <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+    <!-- <label for="feelings">How are you feeling today?</label> -->
+    <textarea class= "myInput" id="feelings" placeholder="Your Feelings Goes Here..."></textarea>
     <button id="generate" type = "submit"> Generate </button>
   </div>
+</div>
+
   <div class ="holder entry">
-    <div class = "title">Most Recent Entry</div>
+
    <div id = "entryHolder">
-    <div id = "date"></div>
-   <div id = "temp"></div>
-   <div id = "content"></div>
+     <div class="date-container">
+      <div id = "day">Sunday</div>
+      <div id = "date">July 07, 2015</div>
+      <div id="hourcontainer"></div>
+     </div>
+   <div class="contentContainet">
+     <div class="tempContainer">
+      <div class = "title">Today</div>
+
+      <span id = "temp">5</span><span class="celsius">&#176;C</span>
+      <div id = "description">Clear</div>
+      <div id="descriptionImage"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Antu_weather-clouds.svg/128px-Antu_weather-clouds.svg.png" alt =""/></div>
+      <div class="locationContainer"><span class="location"><a href="#" class="fa fa-map-marker"></a></span><span id = "country">Egypt, </span><span id="code">35511</span></div>
+     </div>
+     <div class="extra">
+    <div class="temp_minC">Minimum<div id = "temp_min">15 &#176;C</div></div>
+    <div class="temp_maxC">Maximum<div id = "temp_max">23 &#176;C</div></div>
+    <div class="humidityC">humidity<div id = "humidity">70 %</div></div>
+
+    </div>
+      <div id = "content">I Feel Excited</div>
   </div>
+   </div>
   </div>
+
   </div>
 <script src="app.js" type="text/javascript"></script>
 
