@@ -4,6 +4,7 @@
 }
  body {
    background: #dadeff;
+   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   /* background: linear-gradient(to right bottom, #272a41, #232639, #202232, #1c1e2a, #191a23) fixed; */
  }
  #app {
