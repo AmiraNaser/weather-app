@@ -215,3 +215,52 @@
   font-size: 1.3vw;
   margin-left: .5vw;
 }
+@media (max-width: 1200px) {
+  .image1 {
+    width: 200px;
+  }
+  .image2 {
+    width: 100px;
+  }
+  #content {
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+  }
+}
+@media (max-width: 992px) {
+  .image1 {
+    width: 150px;
+  }
+  .image2 {
+    width: 70px;
+  }
+  #content {
+    padding-top: 1.7vw;
+    padding-bottom: 1.7vw;
+  }
+
+}
+@media (max-width: 767px) {
+  .image1 {
+    width: 100px;
+  }
+  .image2 {
+    width: 50px;
+  }
+  #content {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+}
+@media (max-width: 380px) {
+  .image1 {
+    width: 50px;
+  }
+  .image2 {
+    width: 40px;
+  }
+  #content {
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+  }
+}

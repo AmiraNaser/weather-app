@@ -101,19 +101,19 @@ const updateUI = async () => {
     country.innerHTML = getAllData.country + ", ";
     //change image according to status
     if (getAllData.description == "Clouds") {
-      document.getElementById('descriptionImage').innerHTML = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Antu_weather-many-clouds.svg/128px-Antu_weather-many-clouds.svg.png\">";
+      document.getElementById('descriptionImage').innerHTML = "<img class='image2' src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Antu_weather-many-clouds.svg/128px-Antu_weather-many-clouds.svg.png\">";
     } else if (getAllData.description == "Clear") {
-      document.getElementById('descriptionImage').innerHTML = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Antu_weather-clouds.svg/128px-Antu_weather-clouds.svg.png\"/>";
+      document.getElementById('descriptionImage').innerHTML = "<img class='image2' src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Antu_weather-clouds.svg/128px-Antu_weather-clouds.svg.png\"/>";
     }else if (getAllData.description == "Rain") {
-      document.getElementById('descriptionImage').innerHTML = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Antu_weather-showers-scattered.svg/128px-Antu_weather-showers-scattered.svg.png\">";
+      document.getElementById('descriptionImage').innerHTML = "<img class='image2' src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Antu_weather-showers-scattered.svg/128px-Antu_weather-showers-scattered.svg.png\">";
     }else if (getAllData.description == "Snow") {
-      document.getElementById('descriptionImage').innerHTML = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/4/49/Emoji_u1f328.svg\"/>";
+      document.getElementById('descriptionImage').innerHTML = "<img class='image2' src=\"https://upload.wikimedia.org/wikipedia/commons/4/49/Emoji_u1f328.svg\"/>";
     }else if (getAllData.description == "Thunderstorm") {
-      document.getElementById('descriptionImage').innerHTML = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Antu_weather-storm-day.svg/128px-Antu_weather-storm-day.svg.png\"/>";
+      document.getElementById('descriptionImage').innerHTML = "<img class='image2' src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Antu_weather-storm-day.svg/128px-Antu_weather-storm-day.svg.png\"/>";
     }else if (getAllData.description == "Drizzle") {
-      document.getElementById('descriptionImage').innerHTML = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Antu_weather-snow-scattered.svg/128px-Antu_weather-snow-scattered.svg.png\"/>";
+      document.getElementById('descriptionImage').innerHTML = "<img class='image2' src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Antu_weather-snow-scattered.svg/128px-Antu_weather-snow-scattered.svg.png\"/>";
     }else {
-      document.getElementById('descriptionImage').innerHTML = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Antu_weather-mist.svg/128px-Antu_weather-mist.svg.png\"/>";
+      document.getElementById('descriptionImage').innerHTML = "<img class='image2' src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Antu_weather-mist.svg/128px-Antu_weather-mist.svg.png\"/>";
     }
   } catch (e) {
     console.log(`Caught error ${e}`);
